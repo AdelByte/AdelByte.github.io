@@ -1,10 +1,11 @@
 #Updates :
 
-(4-2-2022)
-- Maga Website Update
+(16-2-2022)
+- Updated WA-Plus website
 
 #Old Updates
-
+(4-2-2022)
+- Maga Website Update
 (17-12-2021)
 -Fixed some problems with sizes
 (2-12-2021)
