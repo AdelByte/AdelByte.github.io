@@ -1,4 +1,8 @@
 #Updates :
+(04-12-2022)
+- Better UI look
+- Added more features
+
 (09-5-2022)
 - Updated Links Website
 - Made some Adjustment for the layout
