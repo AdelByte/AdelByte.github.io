@@ -44,7 +44,7 @@ html {
     font-family: sans-serif;
     line-height: 1.15;
     -webkit-text-size-adjust: 100%;
-    -webkit-tap-highlight-color: transparent
+    -webkit-tap-highlight-color: transparent;
 }
 
 figcaption, figure, footer, header, main, nav, section {
@@ -59,7 +59,7 @@ body {
     line-height: 1.5;
     color: #212529;
     text-align: left;
-    background-color: #fff
+    background-color: #000000
 }
 
 [tabindex="-1"]:focus:not(:focus-visible) {
