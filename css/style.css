@@ -235,6 +235,13 @@ ol {
 /*---------------------
   Header
 -----------------------*/
+
+.Website_logo {
+    position: absolute;
+    left: 100px;
+    width: 90px; /* Set the width to 200 pixels */
+    height: 90px
+}
 .header {
     position: fixed;
     left: 0;
@@ -246,11 +253,14 @@ ol {
 }
 
 .header__logo {
-  padding: 30px 0;
+    position:fixed;
+    left 0px;
+    width: 120px; /* Set the width to 200 pixels */
+    height: 90px
 }
-.header__logo a {
-  display: inline-block;
-}
+    .header__logo a {
+
+    }
 
 .header__nav__option {
   text-align: right;
@@ -1826,10 +1836,14 @@ ol {
   .about__pic {
     margin-bottom: 50px;
   }
-
-  .about__text {
-    padding-left: 0;
-  }
+    .col-lg-2 {
+        position: absolute;
+        z-index: 1;
+       
+    }
+  about__text {
+        padding-left: 0;
+    }
 
   .portfolio__filter li {
     padding: 6px 15px;
