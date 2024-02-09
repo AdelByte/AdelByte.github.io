@@ -242,6 +242,15 @@ ol {
     width: 90px; /* Set the width to 200 pixels */
     height: 90px
 }
+
+.mobilelogo {
+    height: 60px;
+    top: 0;
+    position: fixed;
+    left: 50%;
+    width: 60px;
+    transform: translate(, -50%);
+}
 .header {
     position: fixed;
     left: 0;
@@ -323,14 +332,20 @@ ol {
 .header__nav__menu ul li .dropdown li a:after {
   display: none;
 }
-.header__nav__menu ul li a {
-  font-size: 15px;
-  font-family: "Play", sans-serif;
-  color: #ffffff;
-  display: block;
-  text-transform: uppercase;
-  position: relative;
-  padding: 6px 0;
+    .header__nav__menu ul li a {
+        font-size: 15px;
+        font-family: "Play", sans-serif;
+        color: #ffffff;
+        display: block;
+        text-transform: uppercase;
+        position: relative;
+        padding: 6px 0;
+        transition: font-size .5s ease-in-out, padding .5s ease-in-out;
+    }
+
+.header__nav__menu ul li a:hover {
+    font-size: 17px;
+    padding: 10px 0;
 }
 .header__nav__menu ul li a:after {
   position: absolute;
@@ -602,10 +617,11 @@ ol {
   border-left: 1px solid #333333;
   border-top: 1px solid #333333;
   content: "";
-  z-index: -1;
+  z-index: -9;
 }
 .counter__item.second__item {
   margin-top: -185px;
+  z-index:1;
 }
 .counter__item.second__item:before {
   left: -316px;
@@ -615,9 +631,10 @@ ol {
   border-left: none;
   border-top: none;
 }
-.counter__item.four__item {
-  margin-top: -185px;
-}
+    .counter__item.four__item {
+        margin-top: -185px;
+        z-index: 1;
+    }
 .counter__item.four__item:before {
   left: -380px;
   bottom: -380px;
@@ -629,6 +646,7 @@ ol {
 .counter__item.third__item:before {
   left: -65px;
   bottom: -317px;
+   z-index:1;
 }
 
 .counter__item__text {
@@ -637,15 +655,21 @@ ol {
       transform: rotate(-45deg);
 }
 .counter__item__text h2 {
-  font-size: 60px;
-  color: #ffffff;
-  font-weight: 700;
-  margin-bottom: 6px;
-  margin-top: 18px;
+    font-size: 60px;
+    color: #ffffff;
+    font-weight: 700;
+    margin-bottom: 6px;
+    margin-top: 18px;
+    transition: font-size 0.3s ease; /* Transition effect on font-size property */
 }
+
+.counter__item__text h2:hover {
+    font-size: 70px;
+}
+
 .counter__item__text p {
-  color: #ffffff;
-  margin-bottom: 0;
+    color: #ffffff;
+    margin-bottom: 0;
 }
 
 /*---------------------
@@ -782,7 +806,12 @@ ol {
   font-weight: 700;
   line-height: 55px;
   margin-bottom: 22px;
+  transition : color .5s ease-in-out;
 }
+
+.callto__text h2:hover {
+    color: #f44336;
+} 
 .callto__text p {
   font-size: 15px;
   color: #ffffff;
@@ -791,15 +820,23 @@ ol {
   margin-bottom: 55px;
 }
 .callto__text a {
-  color: #ffffff;
-  background: #f44336;
-  font-size: 15px;
-  font-weight: 700;
-  font-family: "Play", sans-serif;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  display: inline-block;
-  padding: 14px 32px 12px;
+    color: #ffffff;
+    background: #f44336;
+    font-size: 15px;
+    font-weight: 700;
+    font-family: "Play", sans-serif;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    display: inline-block;
+    padding: 14px 32px 12px;
+    transition: font-size .5s ease-in-out ,color .5s ease-in-out;
+}
+
+.callto__text a:hover {
+    color: #100028;
+    background: #f44336;
+    font-size: 20px;
+   
 }
 
 /*---------------------
@@ -1845,9 +1882,10 @@ ol {
         padding-left: 0;
     }
 
-  .portfolio__filter li {
-    padding: 6px 15px;
-  }
+
+    .portfolio__filter li {
+        padding: 6px 15px;
+    }
 
   .header .container {
     position: relative;

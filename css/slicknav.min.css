@@ -181,11 +181,24 @@
     .mobile-menu-display {
         display: none;
     }
+    .mobilelogo{
+        display:none;
+    }
 }
 
 @media screen and (max-width: 990px) {
     .mobile-menu-display{
     display: block;
+    }
+    .Website_logo{
+        display:none;
+    }
+    .mobilelogo{
+        display:block;
+    }
+    ..Website_logo {
+        left: 50%;
+        transform: translate(, -50%);
     }
 }
 
